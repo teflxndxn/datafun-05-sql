@@ -92,3 +92,26 @@ Pro Analytics 01 - Project Initialization
 Pro Analytics 01 - Repeatable Workflow
 Course Modules: Chapter 9 (Files & Exceptions) and Chapter 17 (SQL & Big Data)
 
+## Books & Authors Database Project
+
+This section of the project demonstrates creating and managing a simple SQLite database with two related tables: `authors` and `books`. It showcases:
+
+- Creating tables with appropriate schema including primary keys (author_id, book_id) and foreign keys (author_id in books).
+- Reading data from CSV files (`data/authors.csv` and `data/books.csv`).
+- Inserting records into the tables programmatically using Python.
+- Adding a new `is_favorite` column to the `books` table and updating records accordingly.
+- Querying and displaying combined book and author information, including the favorite status.
+- Proper database connection handling and modular Python code.
+
+### Data files
+
+- `data/authors.csv` contains author records with unique IDs, first and last names.
+- `data/books.csv` contains book records including book IDs, titles, publication years, and author references.
+
+### How to run
+
+1. Ensure you have the CSV data files in the `data/` folder.
+2. Run the Python script to create tables, load data, and display results:
+
+   ```bash
+   python book_db.py

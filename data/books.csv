@@ -1,0 +1,4 @@
+book_id,title,year_published,author_id,is_favorite
+d6f83870-ff21-4a5d-90ab-26a49ab6ed12,To Kill a Mockingbird,1960,10f88232-1ae7-4d88-a6a2-dfcebb22a596,1
+0f5f44f7-44d8-4f49-b8c4-c64d847587d3,1984,1949,c3a47e85-2a6b-4196-a7a8-8b55d8fc1f70,0
+ca8e64c3-1e67-47f5-82cc-3e4e30f63b75,Harry Potter and the Sorcerer's Stone,1997,6b693b96-394a-4a1d-a4e2-792a47d7a568,1
