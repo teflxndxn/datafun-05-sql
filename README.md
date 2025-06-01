@@ -20,15 +20,15 @@ This project demonstrates integrating Python with SQLite to create, manage, and 
 
 ## Setup Instructions
 
-1.Clone the repository:
+1. Clone the repository:
 
    ```bash
    git clone https://github.com/teflxndxn/datafun-05-sql.git
    cd datafun-05-sql
+ 
 
 
-
-2. Create and activate a Python virtual environment:
+ 2. Create and activate a Python virtual environment:
 
 python3 -m venv .venv
 source .venv/bin/activate # macOS/Linux
@@ -83,4 +83,12 @@ Joins (e.g., joining products and sales)
 Display results using pandas DataFrames.
 Organized modular code using best practices in Python scripting and SQL.
 
+
+
+📚 References
+This project follows the standard workflow and best practices taught in:
+
+Pro Analytics 01 - Project Initialization
+Pro Analytics 01 - Repeatable Workflow
+Course Modules: Chapter 9 (Files & Exceptions) and Chapter 17 (SQL & Big Data)
 
