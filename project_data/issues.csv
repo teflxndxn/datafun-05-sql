@@ -1,0 +1,4 @@
+issue_id,title,category,status
+ISS001,Login Error,Bug,Open
+ISS002,Payment Failure,Bug,Resolved
+ISS003,Feature Request: Dark Mode,Enhancement,In Progress

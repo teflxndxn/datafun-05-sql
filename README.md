@@ -115,3 +115,46 @@ This section of the project demonstrates creating and managing a simple SQLite d
 
    ```bash
    python book_db.py
+
+
+ ## CC5.4 Initialize the Database
+
+### Project Structure
+
+- Root folder: `datafun-05-sql`
+- Subfolders:
+  - `data/` — contains the SQLite database file `project.sqlite3`
+  - `project_data/` — contains source CSV files (`authors.csv`, `books.csv`, and the fixed `issues_fixed.csv`, `analyzing_fixed.csv`)
+  - `sql/` (optional) — for SQL scripts if needed
+- Python script: `load_data.py` in root folder to load data from CSVs into SQLite database
+
+### Database Setup and Data Loading
+
+- Created SQLite database `project.sqlite3` with tables:
+  - `authors(author_id TEXT PRIMARY KEY, first TEXT, last TEXT)`
+  - `books(book_id TEXT PRIMARY KEY, title TEXT, year_published INTEGER, author_id TEXT)`
+  - `issues(issue_id TEXT PRIMARY KEY, title TEXT, category TEXT, status TEXT)`
+  - `analyzing(analysis_id TEXT PRIMARY KEY, issue_id TEXT, analyst TEXT, summary TEXT, date_analyzed TEXT)`
+
+- Fixed raw CSV data (`issues_raw.csv`) via Python script inside `load_data.py` to generate clean CSVs (`issues_fixed.csv` and `analyzing_fixed.csv`) with proper columns and formatting
+
+- Used `pandas` and `sqlite3` in `load_data.py` to:
+  - Insert authors and books from CSV
+  - Load fixed issues and analyzing data into corresponding database tables
+
+- Verified database content using DBeaver SQLite viewer
+
+### How to Run
+
+1. Ensure you have the necessary Python environment with required packages (`pandas`, `sqlite3` is built-in).
+2. Place raw CSV files in `project_data/`.
+3. Run:
+   ```bash
+   python load_data.py
+
+4.This will generate fixed CSV files and populate project.sqlite3 with all data.
+5.Use any SQLite viewer (e.g., DBeaver, VSCode SQLite extension) to verify tables and data.
+
+Notes
+Database IDs are stored as TEXT to accommodate UUIDs.
+Fixed CSVs are auto-generated from raw CSVs for consistent formatting.

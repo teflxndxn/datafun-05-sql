@@ -1,0 +1,4 @@
+analysis_id,issue_id,analyst,summary,date_analyzed
+AN001,ISS001,Alice,Identified root cause as missing token,2024-12-10
+AN002,ISS002,Bob,Issue fixed by patch v2.3,2025-01-15
+AN003,ISS003,Charlie,Request aligned with product goals,2025-03-22
