@@ -84,4 +84,4 @@ insert_issues_and_analyzing()
 
 # === Close connection ===
 conn.close()
-print("✅ All data loaded successfully.")
+print("All data loaded successfully.")

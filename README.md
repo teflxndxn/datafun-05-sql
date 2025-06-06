@@ -155,6 +155,9 @@ Here’s a screenshot showing the populated database opened in VS Code:
 Here is a screenshot showing the project files in VS Code:
 ![Files in VS Code](files.png)
 
+### SQL Update Query 
+
+
 ---
 
 ## Project Workflow Commands
