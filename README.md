@@ -142,19 +142,35 @@ This section of the project demonstrates creating and managing a simple SQLite d
   - Insert authors and books from CSV
   - Load fixed issues and analyzing data into corresponding database tables
 
-- Verified database content using DBeaver SQLite viewer
+- Verified database content using DBeaver SQLite viewer and VS Code SQLite extension
 
-### How to Run
+---
 
-1. Ensure you have the necessary Python environment with required packages (`pandas`, `sqlite3` is built-in).
-2. Place raw CSV files in `project_data/`.
-3. Run:
-   ```bash
-   python load_data.py
+## Screenshot
 
-4.This will generate fixed CSV files and populate project.sqlite3 with all data.
-5.Use any SQLite viewer (e.g., DBeaver, VSCode SQLite extension) to verify tables and data.
+Here’s a screenshot showing the populated database opened in VS Code:
 
-Notes
-Database IDs are stored as TEXT to accommodate UUIDs.
-Fixed CSVs are auto-generated from raw CSVs for consistent formatting.
+![Screenshot showing project.sqlite3 with tables](project.png)
+
+---
+
+## Project Workflow Commands
+
+```bash
+
+# Create and activate virtual environment
+python3 -m venv .venv
+source .venv/bin/activate  # or .venv\Scripts\activate on Windows
+
+# Install dependencies
+pip install pandas
+
+# Run the Python script to clean and load data
+python load_data.py
+
+# View the SQLite database in VS Code or another viewer
+
+# Add and commit changes using Git
+git add .
+git commit -m "Add project setup, data load, screenshot, and workflow commands"
+git push origin main
