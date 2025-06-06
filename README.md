@@ -156,6 +156,9 @@ Here is a screenshot showing the project files in VS Code:
 ![Files in VS Code](files.png)
 
 ### SQL Update Query 
+### Screenshot of Update Query Execution
+
+![Update Query Output](query_update1.png)
 
 
 ---
