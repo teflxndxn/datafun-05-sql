@@ -152,6 +152,9 @@ Here’s a screenshot showing the populated database opened in VS Code:
 
 ![Screenshot showing project.sqlite3 with tables](project.png)
 
+Here is a screenshot showing the project files in VS Code:
+![Files in VS Code](files.png)
+
 ---
 
 ## Project Workflow Commands
